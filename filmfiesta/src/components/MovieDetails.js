@@ -13,7 +13,7 @@ export const MovieDetails = () => {
     },[])
 
     const getMovieDetails=async()=>{
-      const res = await fetch(`http://www.omdbapi.com/?i=${imdbID}&apikey=946c8fd2`)
+      const res = await fetch(`https://www.omdbapi.com/?i=${imdbID}&apikey=946c8fd2`)
       const data = await res.json()
       console.log("MovieDetailsData",data)
       setMovieDetails(data)
