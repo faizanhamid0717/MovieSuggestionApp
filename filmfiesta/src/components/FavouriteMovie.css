@@ -1,0 +1,57 @@
+.main-cont{
+    background-color: black;
+    height: 200vh;
+    width: 100%;
+}
+.favouriteCont{
+    /* border: 1px solid red; */
+    height: auto;
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: black;
+    gap: 10px;
+}
+.fav-movie{
+    border: 1px solid rgb(169, 161, 161);
+    height: 55vh;
+    width: 25vw;
+     border-radius: 10px;
+}
+
+
+.fav-movie img{
+    height: 40vh;
+    width: 25vw;
+    border-radius: 10px;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     color: rgb(184, 176, 176);
+     margin-top: 10px;
+}
+
+@media (max-width:767px) {
+     .favouriteCont{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+     }
+     .fav-movie{
+        height: auto;
+        width: auto;
+     }
+     .fav-movie img{
+        height: auto;
+        width: auto;
+     }
+
+     .title{
+       font-size: 30px;
+     }
+}

@@ -1,0 +1,113 @@
+
+.main-container {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 3px solid green; */
+  }
+  
+  .background-image {
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/c906271d-7184-4eec-83c9-b6d4c1a068ec/728874a6-eeda-400a-9bcf-a935a1408a4f/IN-en-20231127-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    /* padding-left: 100px;
+    padding-right: 100px; */
+    padding-top: 20px;
+    /* border: 3px solid red; */
+  }
+  
+  .logo {
+    color:red;
+    font-size: 40px;
+    padding-left: 100px;
+    font-family: cursive;
+    font-weight: bold;
+    /* border: 3px solid red; */
+    width: 5vw;
+   
+  }
+
+ 
+  
+  .login-button {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+ padding: 5px;
+    border-radius: 8px;
+    background-color: rgb(221, 33, 33);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+  }
+  
+  .fav-button{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    /* border: 1px solid red; */
+    background-color: rgb(221, 33, 33);
+    border-radius: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .center-content1 p{
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 70px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     margin-top: 100px;
+     /* border: 3px solid red; */
+     width: 75%;
+     margin: auto;
+     /* text-align: left; */
+  }
+
+  .center-content1 button{
+    height: 10vh;
+    width: 20vw;
+    font-size: 30px;
+    background-color: rgb(221, 33, 33);
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+
+  @media (max-width:767px) {
+    .main-container{
+       height: auto;
+       width: auto;
+    }
+    .background-image{
+      height: 105vh;
+      width: auto;
+    }
+    .top-row{
+      height: auto;
+      width: auto;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+    }
+
+    .center-content1 p{
+      font-size: 60px;
+    }
+    .center-content1 button{
+      height: auto;
+      width: auto;
+      margin-bottom: 10px;
+    }
+  }
